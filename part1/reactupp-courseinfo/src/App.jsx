@@ -1,5 +1,7 @@
 import Header from "./components/Header"
 import Content from "./components/Content"
+import Total from "./components/Total"
+
 import './index.css'
 
 const App = () => {
@@ -15,7 +17,7 @@ const App = () => {
     <div>
       <Header className='courseHeader' course={course} />
       <Content part1={part1} exercises1={exercises1} part2={part2} exercises2={exercises2} part3={part3} exercises3={exercises3} />
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+      <Total exercises1={exercises1} exercises2={exercises2} exercises3={exercises3}/>
     </div>
   )
 }
