@@ -1,9 +1,9 @@
-const Part = ({part, exercises})   => {
+const Part = ({name, exercises}) => {
     return (
-        <div>
-            <h3>{part}</h3>
-            <span>Exercises: {exercises}</span>
-        </div>
+        <>
+            <h3>{name}</h3>
+            <p>{exercises}</p>
+        </>
         )
 }
 

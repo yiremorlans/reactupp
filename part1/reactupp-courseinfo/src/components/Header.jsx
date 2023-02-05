@@ -1,8 +1,8 @@
 //React functional component
-const Header = ( {course} ) => {
+const Header = ({course}) => {
     return (
         <header>
-            <h1>{course}</h1>
+            <h1>{course.name}</h1>
         </header>
     )
 }

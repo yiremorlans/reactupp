@@ -1,12 +1,12 @@
 //react functional component
 import Part from "./Part"
 
-const Content =  ( {part1, part2, part3, exercises1, exercises2, exercises3}  ) => {
+const Content = ({courseMaterial}) => {
     return (
         <section>
-            <Part part={part1} exercises={exercises1} />
-            <Part part={part2} exercises={exercises2} />
-            <Part part={part3} exercises={exercises3} />
+            <Part name={courseMaterial[0].name} exercises={courseMaterial[0].exercises}/>
+            <Part name={courseMaterial[1].name} exercises={courseMaterial[1].exercises}/>
+            <Part name={courseMaterial[2].name} exercises={courseMaterial[2].exercises}/>
         </section>
     )
 }
