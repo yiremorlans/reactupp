@@ -1,9 +1,6 @@
 const Part = ({name, exercises}) => {
     return (
-        <>
-            <h3>{name}</h3>
-            <p>{exercises}</p>
-        </>
+            <h3>{name} <span>{exercises}</span></h3>          
         )
 }
 
