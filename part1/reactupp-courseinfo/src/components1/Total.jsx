@@ -1,6 +1,6 @@
-const Total = ({exercises}) => {
+const Total = ({parts}) => {
     return (
-        <h3>Total # of exercises: {exercises.map(part => part.exercises).reduce((a, b) => a + b, 0)}</h3>
+        <h3>Total # of exercises: {parts.reduce((total, curr) => total + curr.exercises, 0)}</h3>
     )
 }
 
