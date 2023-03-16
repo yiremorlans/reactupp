@@ -1,6 +1,6 @@
-const Part = ({name, exercises}) => {
+const Part = ({part}) => {
     return (
-            <h3>{name} <span>{exercises}</span></h3>          
+        <h3>{part.name} <span>{part.exercises}</span></h3>
         )
 }
 
